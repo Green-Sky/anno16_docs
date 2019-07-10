@@ -10,7 +10,7 @@
 - [Charlie's HomePage](https://www.annozone.de/Charlie/) (German) (annozone.de backup)
 - [Joe's Anno 1602 Inn](https://annozone.de/Joes1602Inn/) (German) (annozone.de backup)
 - [AnnoPool](https://www.annopool.de/index.php?page=Category&categoryID=47&s=4ff0e5572f44cd55deaa17e695ca29d5b73ed661) (file host; mods, savegames, scenarios and islands) (German)
-- [Bomi's ANNOTools](http://www.bomibomanns.de/ANNOTools/) (German)
+- [Bomi's 1602 Zeugs](http://www.bomibomanns.de/1602Zeugs/) (German)
 - [Chains Anno 1602 Szenarienarchiv](http://1602-szenarien.annoarchiv.de/) (German) (file host)
 - [Sir Henry's InselEditor](http://www.zur-borg.de/Anno1602/) (Webpage)
 - [Sir Henry's InselEditor](https://github.com/wzurborg/1602-Island-Editor) (SourceCode, OpenSource Tool)

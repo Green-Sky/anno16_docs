@@ -1,6 +1,7 @@
 # Anno Script #
 
-It kind of resembles a mixture of **INI**, **C-Header** and **JSON** [q](https://github.com/roybaer/mdcii-engine/pull/10#issuecomment-510024829) and is used for various **Configurations** and **Game Data**. Prominent files are eg. [haeuser.cod](../files/haeuser.cod.md) and [figuren.cod](../files/figuren.cod.md), the game config file [game.dat](../files/game.dat.md) and [Highscore Files](./hss.md).
+It kind of resembles a mixture of **INI**, **C-Header** and **JSON** [q](https://github.com/roybaer/mdcii-engine/pull/10#issuecomment-510024829) and is used for various **Configurations** and **Game Data**.
+Prominent files are eg. [haeuser.cod](../files/haeuser.cod.md) and [figuren.cod](../files/figuren.cod.md), the game config file [game.dat](../files/game.dat.md), [Highscore Files](./hss.md) and GUIs.
 
 Like [Text Files](./text.md), it uses [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252) (??) encoding and Windows **Line Endings** (CRLF).
 
