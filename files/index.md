@@ -5,7 +5,7 @@ Filenames can be uppercase or lowercase or mixedcase, depends on version.
 
 | Name								  | FileFormat       | Notes |
 |-------------------------------------|------------------|-------|
-| 1602.exe							  | Executable       | main executable |
+| [1602.exe](./1602.exe.md)			  | Executable       | main executable |
 | [1602Edit.exe](./1602edit.exe.md)	  | Executable       | editor executable not in vanilla game |
 | Config.exe						  | Executable       | little configurator |
 
