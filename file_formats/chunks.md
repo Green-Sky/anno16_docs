@@ -47,11 +47,12 @@ The format is very simple, the [Chunk Header](#chunk-header) consists of a file 
 - AUFTRAG2
 - AUFTRAG4
 - SZENE
-- SZENE_KAMPAGNE
+- [SZENE_KAMPAGNE](./chunks/szene_kampagne.md)
+- [SZENE_MISSNR](./chunks/szene_missnr.md)
 - SZENE_PLAYERMIN
 - SZENE_PLAYERMAX
-- SZENE_GAMEID
-- SZENE_RANKING
+- [SZENE_GAMEID](./chunks/szene_gameid.md)
+- [SZENE_RANKING](./chunks/szene_ranking.md)
 - [RANDTAB](./chunks/randtab.md)
 - [NAME](./chunks/name.md)
 - CUSTOM

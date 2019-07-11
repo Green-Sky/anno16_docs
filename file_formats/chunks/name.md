@@ -1,6 +1,6 @@
 # Chunk NAME #
 
-This [Chunk](../chunks.md) contains the **Name** of the Game.
+This [Chunk](../chunks.md) contains the **Name** of the Scenario/Savegame.
 
 ## Memory Layout ##
 

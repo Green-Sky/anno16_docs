@@ -76,5 +76,5 @@ Scripts usually have inconsistent indention, but use **Spaces** in most cases.
 
 Some scripts are erroneous (??). Occasionally the `@` is missing from relative **Config Definitions**. **Undefined Variables** are used (??).
 
-[cmfcmf](https://github.com/cmfcmf)'s [parser implementation](https://github.com/cmfcmf/Anno2018/blob/master/src/parsers/DAT/dat-parser.ts).
+[Christian Flach](https://github.com/cmfcmf)'s [parser implementation](https://github.com/cmfcmf/Anno2018/blob/master/src/parsers/DAT/dat-parser.ts).
 
