@@ -47,3 +47,5 @@ The **Texture** starts in the upper left corner and can be interpreted in the fo
 
 Since there is no length of the **Texture Index**, one can use the offset of the first **Texture** as an **Texture Index** delimiter.
 
+Main source of information: [Sir Henry's Grafx Source](https://github.com/wzurborg/grafx1602).
+
