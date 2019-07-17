@@ -15,21 +15,23 @@ Comments start with `;` and end at the **newline** character.
 
 Variable definitions are indicated by an Uppercase name followed by aleast 1 **White Space Character** (??) and an **Equal Sign** (`=`). After that is an **Expression**, in most cases a **Number** or an other **Variable** plus a **Number**. Also it is possible to use `Nummer` instead of an **Expression**.
 
+They can be prefixed with an `@` to indicate a relative(to themself) value.
+
 For Example:
 ```
 GFXSOMETHINGBASE = 0
 GFXSOMETHING1 = GFXSOMETHINGBASE+10
 ```
 
-Variables can be predefined by the Application.
+Some Variables are predefined by the Application.
 
-### "Configuration" Definitions ###
+### Properties ###
 
 They can be context sesitiv, meaning dependent on the **Object** and **Object Number** if present.
-A Definition consists of an **Identifier**, usualy starting with an Uppercase letter, followed by `:` and whitespaces.
+A **Property Definition** consists of an **Identifier**, usualy starting with an Uppercase letter, followed by `:` and whitespace(s).
 After that comes a comma sperated list of **Expressions** or **Fixed Point Values**.
 
-They can be prefixed with an `@` to indicate a relative value.
+They can be prefixed with an `@` to indicate a relative(to the previous) value.
 They support plus and minus operations on the previous value.
 
 For Example:
