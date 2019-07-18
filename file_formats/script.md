@@ -9,11 +9,12 @@ Like [Text Files](./text.md), it uses [Windows-1252](https://en.wikipedia.org/wi
 
 ### Comments ###
 
-Comments start with `;` and end at the **newline** character.
+Comments start with `;` and end with the **newline** character.
 
 ### Variables ###
 
-Variable definitions are indicated by an Uppercase name followed by aleast 1 **White Space Character** (??) and an **Equal Sign** (`=`). After that is an **Expression**, in most cases a **Number** or an other **Variable** plus a **Number**. Also it is possible to use `Nummer` instead of an **Expression**.
+Variable definitions are indicated by an Uppercase name followed by aleast 1 **White Space Character** (??) and an **Equal Sign** (`=`).
+After that is an **Expression**, in most cases a **Number** or an other **Variable** plus a **Number**. Also it is possible to use `Nummer` instead of an **Expression**.
 
 They can be prefixed with an `@` to indicate a relative(to themself) value.
 
@@ -39,11 +40,26 @@ For Example:
 Nurture: 1.4                    ; fixed point value
 Nurturelist: 1.4, SOMEVAR, 0    ; list
 
+Nummer: 0                       ; start object
 Something: 1
+
+Nummer: 1                       ; or @Nummer: +1 ; the next object
 @Something: +1                  ; 2
 ```
 
-### List of non-Object Config Definitions / Keywords ###
+#### Property Array Subscript Operator ####
+
+TODO
+
+For Example:
+```
+Pos:        20, 42                ; Property array
+
+Posoffs:    30-Pos[0], 200-Pos[1] ; 30 - 20, 200 - 42 -> 10, 158
+
+```
+
+### List of non-Object Properties / Keywords ###
 
 | ID            | Expected Values   | Use |
 |---------------|-------------------|-----|
@@ -57,14 +73,14 @@ Something: 1
 
 **Object Definitions** are in most cases **Arrays** of a defined type.
 **Objects** can be nested (containing itself a Object), two deep.
-The **Arrays** start with the **Keyword** (Configuration Definition) `Objekt` followed by a `:`, whitespace and the **Type** (a **Variable**) of the **Object**.
+The **Arrays** start with the **Keyword** `Objekt` followed by a `:`, whitespace and the **Type** (a **Variable**) of the **Object**.
 
-The next **Object** in the **Array** usually(??) starts with the `Nummer:` definition.
+The next **Object** in the **Array** (??) starts with the `Nummer:` definition.
 
 The **Array** ends with the **Keyword** `EndObj` usually followed by an `;`(y??).
 
 The **Objects** can be filled, usually with defaults, with the `ObjFill:` **Keyword**.
-It expects a **ID Range** (start and end, comma seperated).
+It accepts an **"Nummer" Range** (start and end, comma seperated) or just an **"Nummer"**.
 
 ### Grammar Rules ###
 
@@ -76,7 +92,7 @@ TODO
 
 Scripts usually have inconsistent indention, but use **Spaces** in most cases.
 
-Some scripts are erroneous (??). Occasionally the `@` is missing from relative **Config Definitions**. **Undefined Variables** are used (??).
+Some scripts are erroneous (??). Occasionally an extra `@` is present on **Properties**. **Undefined Variables** are used (??).
 
 [Christian Flach](https://github.com/cmfcmf)'s [parser implementation](https://github.com/cmfcmf/Anno2018/blob/master/src/parsers/DAT/dat-parser.ts).
 
