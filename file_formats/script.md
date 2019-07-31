@@ -59,6 +59,8 @@ Posoffs:    30-Pos[0], 200-Pos[1] ; 30 - 20, 200 - 42 -> 10, 158
 
 ```
 
+Used in `/Gaddata/CTRL.GAD`.
+
 ### List of non-Object Properties / Keywords ###
 
 | ID            | Expected Values   | Use |

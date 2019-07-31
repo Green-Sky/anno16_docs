@@ -19,3 +19,7 @@
 - [Coloniae](https://github.com/jakubjafra/coloniae) (OpenSource Engine, for Browser)
 - [OBBM-Community](https://www.obbm.de/)
 
+# Honorable Mention #
+
+- [Unknown Horizon](http://unknown-horizons.org/)
+
