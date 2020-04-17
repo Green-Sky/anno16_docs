@@ -16,7 +16,7 @@ This Folder contains the [BSH](../../file_formats/bsh.md) files for placing buil
 | Editor.bsh	| |
 | Editor6.bsh	| |
 | Editor8.bsh	| |
-| STADTFLD.COL	| Color Palette? |
+| STADTFLD.COL	| Color Palette |
 | START.BSH		| |
 | Start6.bsh	| |
 | Start8.bsh	| |
