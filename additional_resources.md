@@ -13,6 +13,7 @@
 - [Sir Henry's Grafx Tool](https://github.com/wzurborg/grafx1602) (SourceCode, OpenSource Tool)
 - [sunflowers forum](https://web.archive.org/web/*/sunflowers.de/discussion/*) (archived)
 - [MDCII-Engine](https://github.com/roybaer/mdcii-engine) (OpenSource Engine, WiP)
+- [MDCII-Engine (fork)](https://github.com/siredmar/mdcii-engine) (fork by Armin Schlegel, OpenSource Engine, WiP)
 - [MDCII-Data](https://github.com/roybaer/mdcii-data) (OpenSource Data replacement files)
 - [Anno2018](https://github.com/cmfcmf/Anno2018) (OpenSource Engine, WiP, TypeScript, for Browser)
 - [Anno2018 (Godot)](https://github.com/cmfcmf/Anno2018-godot) (OpenSource Engine, discontinued)

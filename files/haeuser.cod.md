@@ -2,7 +2,7 @@
 
 Is an [Encrypted](../file_formats/encryption.md) [Script](../file_formats/script.md).
 
-note: `integer` referse to an unsigned integer.
+note: `integer` refers to an unsigned integer.
 
 ## List of Object Types ###
 
@@ -76,6 +76,7 @@ Infastructure levels.
 | Minwohn		| integer			| the amount of citizen to require |
 
 ### HAUS ###
+All the **Buildings**/**Tiles** in the **Game**.
 
 | ID            | Expected Values   | Use |
 |---------------|-------------------|-----|
@@ -223,7 +224,7 @@ Possible Values for `Kind`:
 ### HAUS_BAUKOST ###
 Nested in [HAUS](#haus).
 
-Lists the required *Resources* to build the *Building*.
+Lists the required **Resources** to build the **Building**.
 
 | ID            | Expected Values   | Use |
 |---------------|-------------------|-----|
