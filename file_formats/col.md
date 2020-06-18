@@ -1,0 +1,19 @@
+# COL
+
+Col is the file format used to store the color palette for the game. 
+
+## Format and Structure
+The [Chunk Header](./chunks.md#chunk-header) identifier is COL.
+After the first 20 bytes there are the stored the RGB values one byte per color channel.
+```
+    R     G     B
+    0x00, 0x00, 0x00,
+    0x80, 0x00, 0x00,
+    0x00, 0x80, 0x00,
+    0x80, 0x80, 0x00,
+    0x00, 0x00, 0x80,
+    0x6d, 0x1f, 0x6c,
+    0x00, 0x80, 0x80,
+    0xc0, 0xc0, 0xc0,
+    ...
+```

@@ -9,7 +9,7 @@ After the [Chunk Header](./chunks.md#chunk-header) comes an **Index** of offsets
 
 And after that the **Textures** using a [basic form of bitmap](https://en.wikipedia.org/wiki/BMP_file_format) (8-bit indexed with [RLE](https://en.wikipedia.org/wiki/Run-length_encoding)-like compression and custom header ??)
 
-The BSH file doesn't contain the [Color Palette](). It's somewhere in the main executable(??) and has been extracted, possibly using screenshots, since the game sets the palette for the screen and windows copies it into the screenshot(??).
+The BSH file doesn't contain the [Color Palette](). See [COL](./col.md)
 
 ## Format Structure ##
 
