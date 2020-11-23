@@ -26,7 +26,7 @@ Starts with a Header:
 | 4     | **Width** of the **Texture** |
 | 4     | **Height** of the **Texture** |
 | 4     | **Num** of the **Texture** (??) |
-| 4     | **Len** of the **Texture** in bytes (??) |
+| 4     | **Length** of the **Texture** in bytes |
 
 Followed by the `RLE`-ish compressed image data.
 The **Texture** starts in the upper left corner and can be interpreted in the following loop:
