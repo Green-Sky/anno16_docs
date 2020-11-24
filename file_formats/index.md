@@ -11,3 +11,6 @@
 - [SZS](./szs.md)
 - [Text](./text.md)
 
+## Notes ##
+If not specified otherwise, Numbers are in Little-Endian!
+
