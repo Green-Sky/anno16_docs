@@ -97,4 +97,5 @@ Scripts usually have inconsistent indention, but use **Spaces** in most cases.
 Some scripts are erroneous (??). Occasionally an extra `@` is present on **Properties**. **Undefined Variables** are used (??).
 
 [Christian Flach](https://github.com/cmfcmf)'s [parser implementation](https://github.com/cmfcmf/Anno2018/blob/master/src/parsers/DAT/dat-parser.ts).
+[Armin Schlegel](https://github.com/siredmar)'s [parser implementation (uses protobuf)](https://github.com/siredmar/mdcii-engine/blob/master/source/mdcii/mdcii/src/cod/cod_parser.cpp).
 

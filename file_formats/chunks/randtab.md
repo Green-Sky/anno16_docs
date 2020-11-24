@@ -4,7 +4,7 @@ It should always have a length of 1024 bytes. It contains 512 16bit integers use
 
 ## Memory Layout ##
 
-512 16bit interger.
+512x 16bit-intergers.
 
 ## Used in ##
 
