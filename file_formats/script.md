@@ -34,7 +34,7 @@ Properties add key-value information to objects.
 
 Property identifiers generally are `TitleCaseStrings`, though exceptions apply. The `Nummer` property is a special property which marks elements in an array of objects.
 
-Properties are defined and declared in a single statement such as `PropertyName: 2`. Property definitions are allowed at the top of a script, or within objects. The scope of a property is limited to its surrounding object definition. Property reassignment is not probably not intended to be possible (based on the fact that neither of the game's script files does this).
+Properties are defined and declared in a single statement such as `PropertyName: 2`. Property definitions are allowed at the top of a script, or within objects. The scope of a property is limited to its surrounding object definition. Property reassignment is probably not meant to be possible (based on the fact that neither of the game's script files does this).
 
 The right side of property assignments can be int or float literals, simple arithmetic expressions involving literals and other variable identifiers, or list-typed values (!), which themselves can contain literals or arithmetic expressions. Examples:
 ```
@@ -104,6 +104,10 @@ The special `ObjFill` property permits reuse of object properties for object arr
 * Backward-filling adds the properties of a previously defined object with a certain `Nummer` (i.e. array index) to the current array object. This requires a statement such as `ObjFill: <Nummer reference>`, for example `ObjFill: HAUSWACHS`.
 
 An object can be both forward-filled and backward-filled at the same time.
+
+### Notes / Other Quirks ###
+* In `haeuser.cod` in the KE version, the first occurrence of the `Nummer` property is using a relative assignment (`@Nummer`), even though no previous assignment exists.
+* Some scripts are erroneous (TODO: examples??). Occasionally an extra `@` is present on **Properties**. **Undefined Variables** are used (examples??).
 
 ### EBNF Grammar ###
 
