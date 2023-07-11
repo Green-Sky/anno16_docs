@@ -4,6 +4,13 @@ Is an [Encrypted](../file_formats/encryption.md) [Script](../file_formats/script
 
 note: `integer` refers to an unsigned integer.
 
+## Version Differences
+| Release (product version) | SHA-256 |
+|---------|----------|
+| Original | TODO |
+| NINA | TODO |
+| KE (1.0.0.5), GOG (1.0.0.5), History Edition (1.0.0.0) | `82799ca9b24ae05745818f39c302f46c732e90eb7d6675d5cd6661fed15d2656` |
+
 ## List of Object Types ###
 
 ### BGRUPPE ###
