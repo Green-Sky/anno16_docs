@@ -5,6 +5,7 @@ _Note on OS compatibility_: There is considerable variation in file name casing 
 - [Original](#original)
 - [Neue Inseln, neue Abenteuer (NINA)](#neue-inseln-neue-abenteuer-nina)
 - [Königs-Edition (KE)](#königs-edition-ke)
+    - [COD files](#cod-files)
     - [GFX](#gfx)
     - [MGFX](#mgfx)
     - [SGFX](#sgfx)
@@ -13,16 +14,19 @@ _Note on OS compatibility_: There is considerable variation in file name casing 
         - [Language-specific Files](#language-specific-files)
 - [Good Old Games (GOG)](#good-old-games-gog)
     - [English, German, French Versions](#english-german-french-versions)
+        - [COD files](#cod-files-1)
         - [GFX/MGFX/SGFX](#gfxmgfxsgfx)
         - [ToolGfx](#toolgfx-1)
             - [Language-agnostic files](#language-agnostic-files-1)
             - [Language-specific files](#language-specific-files-1)
     - [Polish Version](#polish-version)
+        - [COD files](#cod-files-2)
         - [GFX](#gfx-1)
         - [MGFX](#mgfx-1)
         - [SGFX](#sgfx-1)
         - [ToolGfx](#toolgfx-2)
 - [History Edition (HE)](#history-edition-he)
+    - [COD files](#cod-files-3)
     - [GFX, MGFX, SGFX](#gfx-mgfx-sgfx)
     - [ToolGfx](#toolgfx-3)
         - [Language-agnostic files](#language-agnostic-files-2)
@@ -38,6 +42,12 @@ TODO
 Information taken from the German release:
 * EXE file version: `0.2.5.2`
 * EXE product version: `1.0.0.5`
+
+### COD files
+| Name | SHA-256 |
+|------|---------|
+| haeuser.cod | `82799ca9b24ae05745818f39c302f46c732e90eb7d6675d5cd6661fed15d2656` |
+| figuren.cod | `2313eeb802ae7f2c4130c611e96489bc172a451d85710d4bf842d58b9e81115c` |
 
 ### GFX
 See [files/gfx/](files/gfx/) for a detailed discussion of file contents.
@@ -165,6 +175,9 @@ French:
 * EXE file version: `0.2.5.2`
 * EXE product version: `1.0.0.5`
 
+#### COD files
+Identical to ![KE](#königs-edition-ke)
+
 #### GFX/MGFX/SGFX
 Identical to ![KE](#königs-edition-ke)
 
@@ -210,7 +223,14 @@ French:
 * EXE file version: `0.1.9.6`
 * EXE product version: `1.0.0.5`
 
+This version does not include the [island editor](files/1602edit.exe.md).
 GFX/MGFX/SGFX are identical to **TODO NINA version??**
+
+#### COD files
+| Name | SHA-256 |
+|------|---------|
+| Haeuser.cod | `ff6231ad15df44b4f7bc724ba28fe0938287fa86f9e49634cebc1bd65f214aec` |
+| Figuren.cod | `e19ff84fbf9771b1fd7d01569e8674cf230d258e16e8d500da27829d073a2f39` |
 
 #### GFX
 
@@ -288,6 +308,9 @@ A refresh of [KE](#königs-edition-ke) that adds 64-bit support, widescreen and 
 
 * EXE file version: `1.0.0.0`
 * EXE product version: `1.0.0.0`
+
+### COD files
+Identical to ![KE](#königs-edition-ke).
 
 ### GFX, MGFX, SGFX
 Identical to ![KE](#königs-edition-ke).
