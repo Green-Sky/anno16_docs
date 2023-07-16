@@ -55,11 +55,12 @@ See [files/gfx/](files/gfx/) for a detailed discussion of file contents.
 Changes in the KE version compared to **TODO the Polish GOG version, which is yet to be identified (suspicion is NINA)**:
 * Additions: `FISCHE.BSH`, `GAUKLER.BSH`, `SCHATTEN.BSH`.
 * Modifications:
-    * `STADTFLD.BSH` adds **TODO what exactly?**
+    * `STADTFLD.BSH` adds many new things **TODO what exactly?**
     * `TIERE.BSH` adds an antelope
-    * in `MAEHER.BSH`, a single pixel in the 1060th image has changed
-    * in `EFFEKTE.BSH`, a volcano projectiles and crates floating on the surface (shown after a ship sinks) were added
-    * `SHIP.BSH` has a different file hash, but image contents are identical
+    * in `MAEHER.BSH`, a single pixel in the 1060th texture has changed
+    * in `EFFEKTE.BSH`, volcano projectiles and crates floating on the surface (shown after a ship sinks) were added
+    * The file size of `SHIP.BSH` is reduced, but the file produces the same series of textures as in the previous version.
+        * This is achieved by removing duplicate textures. For example, the pirate flag animation consists of 8 frames, but only 5 of these frames are unique (playback order is 0, 1, 2, 3, 4, 3, 2, 1). The BSH in **TODO version** stores bitmaps for all 8 frames. The KE version stores bitmaps only for the 5 unique frames, then references those bitmaps multiple times in the BSH texture index (see [BSH file format](file_formats/bsh.md)).
 
 | Name | SHA-256 |
 |------|---------|
