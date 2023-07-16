@@ -5,7 +5,7 @@ It is usually packed using the [Chunks](./chunks.md) format, but always as a sta
 
 The [Chunk Header](./chunks.md#chunk-header) identifier is either `BSH` or `ZEI`. This depends on the file suffix.
 
-After the [Chunk Header](./chunks.md#chunk-header) comes an **Index** of offsets to the **Textures** in the file.
+After the [Chunk Header](./chunks.md#chunk-header) comes an **Index** of offsets to the **Textures** in the file. Different index positions can use the same byte offset, to avoid storing duplicate textures. This is prominently used in `STADTFLD.BSH` in [the KE version](../version_differences.md).
 
 And after that the **Textures** is using a [basic form of bitmap](https://en.wikipedia.org/wiki/BMP_file_format) (8-bit indexed with [RLE](https://en.wikipedia.org/wiki/Run-length_encoding)-like compression and custom header ??)
 
