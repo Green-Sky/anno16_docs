@@ -3,8 +3,6 @@ Is a [Script](../file_formats/script.md) that stores information on in-game sett
 
 ## Königs-Edition (KE)
 
-**TODO add information on how campaign progression is stored**
-
 ### Example Contents
 ```
   Musik:     TRUE, 0
@@ -38,7 +36,9 @@ Is a [Script](../file_formats/script.md) that stores information on in-game sett
   
   Endlosnr: 3
   Tutornr:  0
-  
+
+  Kampagne: 0, 2
+  Kampagne: 1, 1
   
   Objekt:   SPIELNAME
 
@@ -73,6 +73,7 @@ Is a [Script](../file_formats/script.md) that stores information on in-game sett
 | `Endlosnr`          | uint                               | The difficulty of the last endless game (0: easiest, 3: most difficult).                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | `Tutornr`           | uint                               | **TODO Unclear.** It probably is the index of the next tutorial stage to play, but didn't behave this way.                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | `Lastfile`          | string                             | Filesystem path to the `lastgame.gam` autosave file.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `Kampagne` | uint, uint | Campaign progress. The first value is the index of the campaign, the second stores the progress. A progress value of `i` means all scenarios up to and including index `i` are unlocked. |
 | `Objekt: SPIELNAME` | per savegame: uint, char[32], uint | Stores savegame properties. The number of savegames is hard-capped to 12 (any externally added entries will be removed again by the game). The first uint is the index of the corresponding `game{i:02}.gam` savegame file in [SAVEGAME/](./savegame/index.md). The string is the name of the savegame shown in-game. The in-game character limit is 18 chars, though up to 32 chars will be displayed if `game.dat` is edited externally. The second uint is the number of human players participating (1 = singleplayer, 2 = two-player multiplayer, etc.). |
 
 ### Write events
