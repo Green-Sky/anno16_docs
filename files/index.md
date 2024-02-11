@@ -29,7 +29,7 @@ Filenames can be uppercase or lowercase or mixedcase, depends on version.
 
 | Name								  | FileFormat       | Notes |
 |-------------------------------------|------------------|-------|
-| game.dat							  | [Script](../file_formats/script.md) | game configuration, campain progression |
+| [game.dat](./game.dat.md)			  | [Script](../file_formats/script.md) | game configuration, campain progression |
 
 | Name								  | FileFormat       | Notes |
 |-------------------------------------|------------------|-------|
