@@ -180,7 +180,8 @@ namespace Chunks {
 }
 
 union ChunkData<auto chunk_type, auto size> {
-	u8 chunk_data[size];
+	if (size > 0)
+		padding[size];
 
 	if (std::string::starts_with(chunk_type, "AUFTRAG"))
 		Chunks::Auftrag chunk_content;
