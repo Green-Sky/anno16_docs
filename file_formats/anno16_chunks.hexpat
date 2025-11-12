@@ -60,18 +60,48 @@ namespace Chunks {
 
 	struct Insel3 {
 		// TODO: INSEL3
+
+		u8 id;
+		u8 width;
+		u8 height;
 	};
 
 	struct Insel4 {
 		// TODO: INSEL4
+
+		u8 id;
+		u8 width;
+		u8 height;
 	};
 
 	struct Insel5 {
 		// TODO: INSEL5
+
+		u8 id;
+		u8 width;
+		u8 height;
+
+		padding[1];
+
+		u16 pos_x;
+		u16 pos_y;
 	};
 
-	struct InselHaus {
-		// TODO: INSELHAUS
+	bitfield InselHaus_Tile {
+		u16 id;
+		u8 x;
+		u8 y;
+
+		orientation : 2;
+		animation : 4;
+		island : 8;
+		city : 3;
+		padding : 5; // junk or random data
+		player : 4;
+	};
+
+	struct InselHaus<auto size> {
+		InselHaus_Tile tiles[size/sizeof(InselHaus_Tile)];
 	};
 
 	struct InselMaxFun {
@@ -218,7 +248,7 @@ union ChunkData<auto chunk_type, auto size> {
 	else if (std::string::starts_with(chunk_type, "INSEL5"))
 		Chunks::Insel5 chunk_content;
 	else if (std::string::starts_with(chunk_type, "INSELHAUS"))
-		Chunks::InselHaus chunk_content;
+		Chunks::InselHaus<size> chunk_content;
 	else if (std::string::starts_with(chunk_type, "INSEL_MAXFUN"))
 		Chunks::InselMaxFun chunk_content;
 	else if (std::string::starts_with(chunk_type, "KONTOR2"))
