@@ -26,8 +26,24 @@ namespace Chunks {
 		// some more numbers
 	};
 
+	// TODO: move somewhere else
+	struct Bsh_Texture {
+		u32 width;
+		u32 height;
+		u32 num;
+		u32 size_bytes; // includes the 4 u32 here
+
+		u8 data[size_bytes - sizeof(u32)*4];
+	};
+
 	struct Bsh {
-		// TODO: BSH
+		// we use the offset in the first index as the first texture
+		u32 _first_index = std::mem::read_unsigned($, sizeof(u32), std::mem::Endian::Little);
+		auto _number_of_indecies = _first_index/sizeof(u32);
+
+		u32 index[_number_of_indecies];
+
+		Bsh_Texture textures[2]; // TODO: be smart about textures
 	};
 
 	struct Custom {
@@ -174,9 +190,7 @@ namespace Chunks {
 		u32 checksum;
 	};
 
-	struct Zei {
-		// TODO: ZEI
-	};
+	using Zei = Bsh; // alias
 }
 
 union ChunkData<auto chunk_type, auto size> {
