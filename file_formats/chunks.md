@@ -16,55 +16,55 @@ The format is very simple, the [Chunk Header](#chunk-header) consists of a file 
 
 ## Chunk ID list ##
 
-- [BSH](bsh.md) (bsh/zei files use this header, but are never packed with other chunks and can be considered there own file format)
-- [ZEI](bsh.md)
-- INSELHAUS
-- INSEL3
-- INSEL4
-- INSEL5
-- INSEL_MAXFUN
-- PRODLIST2
-- ROHWACHS2
-- SIEDLER
-- WERFT
-- MILITAR
-- KONTOR2
-- MARKT2
-- STADT3
-- STADT4
-- HIRSCH2
-- SHIP4
-- HANDLER
-- SOLDAT2
-- SOLDAT3
-- SOLDATINSEL
-- TURM
-- TIMERS
-- PLAYER2
-- PLAYER3
-- PLAYER4
 - AUFTRAG
 - AUFTRAG2
 - AUFTRAG4
+- [BSH](bsh.md) (bsh/zei files use this header, but are never packed with other chunks and can be considered there own file format)
+- CUSTOM
+- HANDLER
+- HIRSCH2
+- INSEL3
+- INSEL4
+- INSEL5
+- INSELHAUS
+- INSEL_MAXFUN
+- KONTOR2
+- MARKT2
+- MILITAR
+- [NAME](./chunks/name.md)
+- PLAYER2
+- PLAYER3
+- PLAYER4
+- PRODLIST2
+- [RANDTAB](./chunks/randtab.md)
+- ROHWACHS2
+- SHIP4
+- SIEDLER
+- SOLDAT2
+- SOLDAT3
+- SOLDATINSEL
+- STADT3
+- STADT4
 - SZENE
+- [SZENE_GAMEID](./chunks/szene_gameid.md)
 - [SZENE_KAMPAGNE](./chunks/szene_kampagne.md)
 - [SZENE_MISSNR](./chunks/szene_missnr.md)
-- SZENE_PLAYERMIN
 - SZENE_PLAYERMAX
-- [SZENE_GAMEID](./chunks/szene_gameid.md)
+- SZENE_PLAYERMIN
 - [SZENE_RANKING](./chunks/szene_ranking.md)
-- [RANDTAB](./chunks/randtab.md)
-- [NAME](./chunks/name.md)
-- CUSTOM
+- TIMERS
+- TURM
+- WERFT
 - [WIFF](./chunks/wiff.md)
+- [ZEI](bsh.md)
 
 ## Formats packed this way ##
 
 - [BSH](./bsh.md)
-- [SCP](./scp.md)
-- [SZS](./szs.md)
-- [SZM](./szm.md)
 - [GAM](./gam.md)
+- [SCP](./scp.md)
+- [SZM](./szm.md)
+- [SZS](./szs.md)
 
 ## Notes ##
 
