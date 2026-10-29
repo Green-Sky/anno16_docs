@@ -20,7 +20,7 @@ Most of the fields in the INSEL chunk are currently unknown.
 | 23     |1      | *Unknown?* |
 | 24     |2      | **X coordinate** on the map |
 | 26     |2      | **Y coordinate** on the map |
-| 120    |1      | Island type. `0`: appears in the "northern" part of the map, `1`: appears in the southern part. (Missing for INSEL3)|
+| 120    |1      | Island type. `0`: appears in the temperate climate of the map, `1`: appears in the tropical climate. (Missing for INSEL3)|
 
 ## INSELHAUS header ##
 
